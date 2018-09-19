@@ -13,6 +13,11 @@ public class Driver {
 			result = exelreader.readFile();
 		}
 		
+		else if(fileName.contains(".txt")) {
+			TextReader txtreader = new TextReader(fileName);
+			result = txtreader.readFile();
+		}
+		
 		else {
 			result = "Please enter valid file type" ;
 		}
